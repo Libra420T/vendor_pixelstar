@@ -14,3 +14,4 @@ ifeq ($(TARGET_CPU_VARIANT),cortex-a510)
     DEX2OAT_TARGET_CPU_VARIANT := cortex-a76
     DEX2OAT_TARGET_CPU_VARIANT_RUNTIME := cortex-a76
 endif
+
