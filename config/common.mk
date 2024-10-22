@@ -276,11 +276,8 @@ PRODUCT_PACKAGES += \
     AOSPASettingsOverlay 
 
 # Transparent recents in pixel launcher
-TARGET_USES_BLUR_RECENT ?= true
-ifeq ($(TARGET_USES_BLUR_RECENT), true)
 PRODUCT_PACKAGES += \
     PixelLauncherOverlayBlur
-endif
 
 # SystemUI Customisation
 PRODUCT_PACKAGES += \
