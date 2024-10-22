@@ -22,14 +22,11 @@ TARGET_PRODUCT_SHORT := $(subst pixelstar_,,$(PIXELSTAR_BUILD_TYPE))
 
 PIXELSTAR_BUILD_TYPE ?= unofficial
 
-# Only include Updater for official  build
-ifeq ($(filter-out official,$(PIXELSTAR_BUILD_TYPE)),)
     PRODUCT_PACKAGES += \
         Updater
 
 PRODUCT_COPY_FILES += \
     vendor/pixelstar/prebuilt/common/etc/init/init.pixelstar-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.pixelstar-updater.rc
-endif
 
 # Signing
 ifneq (eng,$(TARGET_BUILD_VARIANT))
