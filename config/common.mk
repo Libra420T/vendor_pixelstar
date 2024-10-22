@@ -146,12 +146,10 @@ PRODUCT_PACKAGES += \
     GameSpace
     
 # Charger
-ifeq ($(USE_PIXEL_CHARGER),true)
 PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images \
     product_charger_res_images_vendor
-endif
 
 # Disable RescueParty due to high risk of data loss
 PRODUCT_PRODUCT_PROPERTIES += \
